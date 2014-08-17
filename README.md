@@ -1,7 +1,5 @@
-## =========================
-## Getting and Cleaning Data
+## Data Science - Getting and Cleaning Data
 ## Course Project
-## =========================
 
 The purpose of this project is to demonstrate the student ability to collect, work with, and clean a data set. 
 The goal is to prepare tidy data that can be used for later analysis. 
@@ -16,7 +14,7 @@ The `run_analysis.R` script follows the steps below
 
 ### 1. Read the source files
 
-The following files are read using the read.table() method 
+The following files are read using the `read.table()` method 
 - ./test/X_test.txt
 - ./test/y_test.txt
 - ./test/subject_test.txt
@@ -46,7 +44,7 @@ As there were no errors returned by `na.fail()`, I conclude are no NA in the dat
 I build a vector of features names by using the second column of dataframe built from features.txt. 
 I then left assign the column names using `names(all)<-`
 The column names provided are human readable. 
-I decide not to expand all variable names (e.g. f->fourier) as very long variable names compromise readability. 
+I decide not to expand all variable names (e.g. f becomes fourier) as very long variable names compromise readability. 
 Additional information re variable names is provided in CodeBook.md 
 
 ### 4. Use descriptive activity names to name the activities in the data set.
@@ -69,7 +67,7 @@ The resulting dimension is 10299x88
 I use the `aggregate()` method to group rows by Activity and Subject. 
 In this call, the method applies a the mean function to all variables in each group. 
 
-I write the second data set to tidyset.txt file using row.names = FALSE 
+I write the second data set to tidyset.txt file using `row.names = FALSE` 
 
 Finally, I confirm that the tidy set criteria provided in week 1 lesson apply to the tidayset.txt provided
 
@@ -79,6 +77,8 @@ Finally, I confirm that the tidy set criteria provided in week 1 lesson apply to
 - Include a row at the top of each file with variable names **- DONE**
 - Make variable names human readable AgeAtDiagnosis instead of AgeDx **- DONE**
 - In general data should be saved in one file per table. **- DONE**
+
+
 
 ####Thanks for reading
 *- BlueBonobo*
