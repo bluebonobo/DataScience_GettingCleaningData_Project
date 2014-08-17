@@ -29,8 +29,7 @@ The following files are read using the `read.table()` method
 The merge steps are as follows
 
 1. Build the merged test set called `test_all` by adding columns (cbind) subject and y as first and second columns measurment columns follow (third column onwards). The resulting dimension is 2947x563
-2. Build the merged train set called `train_all` by adding columns (cbind) subject and y as first and second columns measurment columns follow (third column onwards). The resulting dimension is
-7352x563
+2. Build the merged train set called `train_all` by adding columns (cbind) subject and y as first and second columns measurment columns follow (third column onwards). The resulting dimension is 7352x563
 3. Build the merged set called `all` by adding test set rows (rbind) to train set. The resulting dimension is 10299x563
 
 I also test the resulting dataset for NA values by using the `na.fail(all)` method call.
@@ -43,7 +42,7 @@ I build a vector of features names by using the second column of dataframe built
 I then left assign the column names using `names(all)<-`
 
 The column names provided are human readable. 
-I decide not to expand all variable names (e.g. f becomes fourier) as very long variable names compromise readability. 
+I decide not to expand all variable names (e.g. f becomes frequency) as very long variable names compromise readability. 
 Additional information re variable names is provided in CodeBook.md 
 
 #### 4. Use descriptive activity names to name the activities in the data set.
@@ -64,7 +63,8 @@ The resulting dimension is 10299x88
 #### 6. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 I use the `aggregate()` method to group rows by Activity and Subject. 
-In this call, the method applies a the mean function to all variables in each group. 
+In this method call, the method applies the `mean` function to all variables in each group. 
+The resulting dimension is 180x88.
 
 I write the second data set to `tidyset.txt` file using `row.names = FALSE` 
 
