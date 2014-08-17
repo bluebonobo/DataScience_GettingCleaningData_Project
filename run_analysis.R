@@ -5,9 +5,10 @@
 # ensure that directory is setup as per instructions
 
 
-## set working directory
-setwd("C:/Users/fred/Desktop/Data Science/GetCleanData/project/UCI HAR Dataset")
-list.files(".")
+# run this script from /UCI HAR Dataset
+# set working directory to current folder
+setwd(".")
+
 
 ############################################################################################### 
 # Read the files
