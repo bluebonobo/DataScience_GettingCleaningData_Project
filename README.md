@@ -68,8 +68,8 @@ The resulting dimension is 180x88.
 
 I write the second data set to `tidyset.txt` file using `row.names = FALSE` 
 
-Finally, I confirm that the tidy set criteria provided in week 1 lesson apply to the tidayset.txt provided
-- Each variable you measure should be in one column **- DONE**
+Finally, I confirm that the tidy set built here meets the criteria provided in week 1 lessons, namely :
+- Each variable should be in one column **- DONE**
 - Each different observation of that variable should be in a different row **- DONE**
 - There should be one table for each "kind" of variable **- DONE**
 - Include a row at the top of each file with variable names **- DONE**
@@ -78,7 +78,7 @@ Finally, I confirm that the tidy set criteria provided in week 1 lesson apply to
 
 
 
-####Thanks for reading
+#####Thanks for reading
 *- BlueBonobo*
 
 
