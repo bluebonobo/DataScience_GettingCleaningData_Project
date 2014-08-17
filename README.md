@@ -14,7 +14,7 @@ The `run_analysis.R` script follows the steps below
 
 #### 1. Read the source files
 
-The script read the files below using the `read.table()` method 
+The script reads the files below using the `read.table()` method 
 - ./test/X_test.txt
 - ./test/y_test.txt
 - ./test/subject_test.txt
